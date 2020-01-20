@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<head>
+	<title>Memory Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Memory Game</h1>
+  <h2><span id="score"></span></h2>
+
+  <div id="stripe">
+    <button id="reset">Reset</button>
+    <span id="play"><button id="playButton">Play</button></span>
+    <button class="mode">Easy</button>
+    <button class="mode selected">Hard</button>
+  </div>
+
+  <div id="container">
+    <button id="first" class="square gameButtonOff" onclick="selectButton(0)"></button>
+    <button id="second" class="square gameButtonOff" onclick="selectButton(1)"></button>
+    <button id="third" class="square gameButtonOff" onclick="selectButton(2)"></button>
+    <button id="fourth" class="square gameButtonOff" onclick="selectButton(3)"></button>
+    <button id="fifth" class="square gameButtonOff" onclick="selectButton(4)"></button>
+    <button id="sixth" class="square gameButtonOff" onclick="selectButton(5)"></button>
+    <h3 class="end endText">Game Over!</h3>
+    <h3 id="finalScore" class="end endText">Score: 0</h3>
+    <button id="retry" class="end endText">Play Again?</button>
+  </div>
+  <script src="main.js" type="text/javascript"></script>
+</body>
